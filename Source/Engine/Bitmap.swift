@@ -1,9 +1,10 @@
 //
+// Bitmap.swift
+// Engine
+//
 // Created by Kotaro Kamashima on 2022/11/05.
 // Copyright (c) 2022 Nick Lockwood. All rights reserved.
 //
-
-import Foundation
 
 public struct Bitmap {
     public private(set) var pixels: [Color]

@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpImageView()
+
+        var bitmap = Bitmap(width: 8, height: 8, color: .white)
+        bitmap[0, 0] = .blue
+
+        imageView.image = UIImage(bitmap: bitmap)
     }
 
     func setUpImageView() -> Void {
@@ -25,5 +30,6 @@ class ViewController: UIViewController {
         imageView.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .black
+        imageView.layer.magnificationFilter = .nearest
     }
 }
