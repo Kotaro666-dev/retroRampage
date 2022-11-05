@@ -16,6 +16,7 @@
 		016E41D1228E9A8600ACF137 /* Engine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 016E41C9228E9A8600ACF137 /* Engine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C3D302DE91E392BF6326BFF /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D37C9C147EFBD3AA2147C /* Bitmap.swift */; };
 		3C3D34093E6759543B6683FF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D3D5DACDEF2258008ED12 /* Color.swift */; };
+		3C3D3678659F7333A014B94B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D3AB214EF98299BC17FE4 /* Player.swift */; };
 		3C3D380F2CAA7690B86DAE3D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D309F1658A06E9AB51BFF /* Renderer.swift */; };
 		3C3D3CA08DC503AC165C33E0 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D3802880E3D1D394D8923 /* Vector.swift */; };
 		3C3D3EB9708607270FDE4636 /* UIImage+Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D3A2E3F871938302E018B /* UIImage+Bitmap.swift */; };
@@ -59,6 +60,7 @@
 		3C3D37C9C147EFBD3AA2147C /* Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
 		3C3D3802880E3D1D394D8923 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		3C3D3A2E3F871938302E018B /* UIImage+Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Bitmap.swift"; sourceTree = "<group>"; };
+		3C3D3AB214EF98299BC17FE4 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		3C3D3D5DACDEF2258008ED12 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				3C3D37C9C147EFBD3AA2147C /* Bitmap.swift */,
 				3C3D309F1658A06E9AB51BFF /* Renderer.swift */,
 				3C3D3802880E3D1D394D8923 /* Vector.swift */,
+				3C3D3AB214EF98299BC17FE4 /* Player.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				3C3D3EB9708607270FDE4636 /* UIImage+Bitmap.swift in Sources */,
 				3C3D380F2CAA7690B86DAE3D /* Renderer.swift in Sources */,
 				3C3D3CA08DC503AC165C33E0 /* Vector.swift in Sources */,
+				3C3D3678659F7333A014B94B /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
