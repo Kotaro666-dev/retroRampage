@@ -386,7 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8VQKF583ED;
+				DEVELOPMENT_TEAM = VGJ6K43824;
 				INFOPLIST_FILE = Rampage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -486,7 +486,7 @@
 				016E41C0228E9A5E00ACF137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		016E41C1228E9A5E00ACF137 /* Build configuration list for PBXNativeTarget "Rampage" */ = {
 			isa = XCConfigurationList;
@@ -495,7 +495,7 @@
 				016E41C3228E9A5E00ACF137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		016E41D2228E9A8600ACF137 /* Build configuration list for PBXNativeTarget "Engine" */ = {
 			isa = XCConfigurationList;
@@ -504,7 +504,7 @@
 				016E41D4228E9A8600ACF137 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
