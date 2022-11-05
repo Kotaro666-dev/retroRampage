@@ -26,6 +26,10 @@ public extension Bitmap {
             return pixels[y * width + x]
         }
         set {
+            let isValidPixel = x >= 0 && y >= 0 && x < width && y < height
+            guard isValidPixel else {
+                return
+            }
             pixels[y * width + x] = newValue
         }
     }
