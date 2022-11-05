@@ -15,11 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setUpImageView()
 
-        var renderer = Renderer(width: 8, height: 8)
-        renderer.draw()
-
-        imageView.image = UIImage(bitmap: renderer.bitmap)
-
+        let displayLink = CADisplayLink(target: self, selector: #selector((update)))
+        displayLink.add(to: .main, forMode: .common)
     }
 
     func setUpImageView() -> Void {
@@ -32,5 +29,12 @@ class ViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .black
         imageView.layer.magnificationFilter = .nearest
+    }
+
+    @objc func update(_ displayLin: CADisplayLink) {
+        var renderer = Renderer(width: 8, height: 8)
+        renderer.draw()
+
+        imageView.image = UIImage(bitmap: renderer.bitmap)
     }
 }
