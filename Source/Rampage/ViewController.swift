@@ -15,10 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setUpImageView()
 
-        var bitmap = Bitmap(width: 8, height: 8, color: .white)
-        bitmap[0, 0] = .blue
+        var renderer = Renderer(width: 8, height: 8)
+        renderer.draw()
 
-        imageView.image = UIImage(bitmap: bitmap)
+        imageView.image = UIImage(bitmap: renderer.bitmap)
+
     }
 
     func setUpImageView() -> Void {

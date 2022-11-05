@@ -16,6 +16,7 @@
 		016E41D1228E9A8600ACF137 /* Engine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 016E41C9228E9A8600ACF137 /* Engine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C3D302DE91E392BF6326BFF /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D37C9C147EFBD3AA2147C /* Bitmap.swift */; };
 		3C3D34093E6759543B6683FF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D3D5DACDEF2258008ED12 /* Color.swift */; };
+		3C3D380F2CAA7690B86DAE3D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D309F1658A06E9AB51BFF /* Renderer.swift */; };
 		3C3D3EB9708607270FDE4636 /* UIImage+Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D3A2E3F871938302E018B /* UIImage+Bitmap.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		016E41BE228E9A5E00ACF137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		016E41C9228E9A8600ACF137 /* Engine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Engine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		016E41CC228E9A8600ACF137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3D309F1658A06E9AB51BFF /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		3C3D37C9C147EFBD3AA2147C /* Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
 		3C3D3A2E3F871938302E018B /* UIImage+Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Bitmap.swift"; sourceTree = "<group>"; };
 		3C3D3D5DACDEF2258008ED12 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				016E41CC228E9A8600ACF137 /* Info.plist */,
 				3C3D3D5DACDEF2258008ED12 /* Color.swift */,
 				3C3D37C9C147EFBD3AA2147C /* Bitmap.swift */,
+				3C3D309F1658A06E9AB51BFF /* Renderer.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				3C3D34093E6759543B6683FF /* Color.swift in Sources */,
 				3C3D302DE91E392BF6326BFF /* Bitmap.swift in Sources */,
 				3C3D3EB9708607270FDE4636 /* UIImage+Bitmap.swift in Sources */,
+				3C3D380F2CAA7690B86DAE3D /* Renderer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
