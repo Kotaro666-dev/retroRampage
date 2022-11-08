@@ -9,6 +9,8 @@
 import UIKit
 
 private let joystickRadius: Double = 40
+private let maximumTimeStep: Double = 1 / 20
+private let worldTimeStep: Double = 1 / 120
 
 class ViewController: UIViewController {
     private let imageView = UIImageView()
@@ -51,9 +53,12 @@ class ViewController: UIViewController {
     }
 
     @objc func update(_ displayLink: CADisplayLink) {
-        let timeStep = displayLink.timestamp - lastFrameTime
+        let timeStep = min(maximumTimeStep, displayLink.timestamp - lastFrameTime)
         let input = Input(velocity: inputVector)
-        world.update(timeStep: timeStep, input: input)
+        let worldSteps = (timeStep / worldTimeStep).rounded(.up)
+        for _ in 0..<Int(worldSteps) {
+            world.update(timeStep: timeStep / worldSteps, input: input)
+        }
         lastFrameTime = displayLink.timestamp
 
         let size = Int(min(imageView.bounds.width, imageView.bounds.height))
