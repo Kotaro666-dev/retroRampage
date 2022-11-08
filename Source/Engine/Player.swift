@@ -6,6 +6,7 @@
 public struct Player {
     public var position: Vector
     public var velocity: Vector
+    public let speed: Double = 2
     public let radius = 0.5
 
     public init(position: Vector) {
