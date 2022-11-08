@@ -31,8 +31,12 @@ public extension World {
     }
 
     mutating func update(timeStep: Double, input: Input) {
+        let oldPosition = player.position
         player.velocity = input.velocity * player.speed
         player.position += player.velocity * timeStep
+        if player.isIntersection(map: map) {
+            player.position = oldPosition
+        }
         player.position.x.formTruncatingRemainder(dividingBy: size.x)
         player.position.y.formTruncatingRemainder(dividingBy: size.y)
     }
