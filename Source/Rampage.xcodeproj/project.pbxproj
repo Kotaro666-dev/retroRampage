@@ -15,6 +15,8 @@
 		016E41D0228E9A8600ACF137 /* Engine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016E41C9228E9A8600ACF137 /* Engine.framework */; };
 		016E41D1228E9A8600ACF137 /* Engine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 016E41C9228E9A8600ACF137 /* Engine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C3D302DE91E392BF6326BFF /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D37C9C147EFBD3AA2147C /* Bitmap.swift */; };
+		3C3D321C369FFFAF5401958F /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D30735074A2C536AFD62F /* Tile.swift */; };
+		3C3D33FB324D56B2C7E12DB5 /* Map.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3D374FFCA7215838B64E0C /* Map.json */; };
 		3C3D34093E6759543B6683FF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D3D5DACDEF2258008ED12 /* Color.swift */; };
 		3C3D3678659F7333A014B94B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D3AB214EF98299BC17FE4 /* Player.swift */; };
 		3C3D380F2CAA7690B86DAE3D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D309F1658A06E9AB51BFF /* Renderer.swift */; };
@@ -58,8 +60,10 @@
 		016E41BE228E9A5E00ACF137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		016E41C9228E9A8600ACF137 /* Engine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Engine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		016E41CC228E9A8600ACF137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C3D30735074A2C536AFD62F /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		3C3D309F1658A06E9AB51BFF /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		3C3D34945E6F9674C2C0F358 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		3C3D374FFCA7215838B64E0C /* Map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Map.json; sourceTree = "<group>"; };
 		3C3D37C9C147EFBD3AA2147C /* Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
 		3C3D3802880E3D1D394D8923 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		3C3D3A2E3F871938302E018B /* UIImage+Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Bitmap.swift"; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				016E41BB228E9A5E00ACF137 /* LaunchScreen.storyboard */,
 				016E41BE228E9A5E00ACF137 /* Info.plist */,
 				3C3D3A2E3F871938302E018B /* UIImage+Bitmap.swift */,
+				3C3D374FFCA7215838B64E0C /* Map.json */,
 			);
 			path = Rampage;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 				3C3D3AB214EF98299BC17FE4 /* Player.swift */,
 				3C3D34945E6F9674C2C0F358 /* World.swift */,
 				3C3D3E503CD6262B8CA31237 /* Rect.swift */,
+				3C3D30735074A2C536AFD62F /* Tile.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 				016E41BD228E9A5E00ACF137 /* LaunchScreen.storyboard in Resources */,
 				016E41BA228E9A5E00ACF137 /* Assets.xcassets in Resources */,
 				016E41B8228E9A5B00ACF137 /* Main.storyboard in Resources */,
+				3C3D33FB324D56B2C7E12DB5 /* Map.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +264,7 @@
 				3C3D3678659F7333A014B94B /* Player.swift in Sources */,
 				3C3D3E3314C9F3BB7F3A2081 /* World.swift in Sources */,
 				3C3D3CC59C40717BEED92792 /* Rect.swift in Sources */,
+				3C3D321C369FFFAF5401958F /* Tile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

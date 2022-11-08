@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     private let imageView = UIImageView()
-    private var world = World()
+    private var world = World(map: loadMap())
     private var lastFrameTime = CACurrentMediaTime()
 
     override func viewDidLoad() {
@@ -44,4 +44,10 @@ class ViewController: UIViewController {
 
         imageView.image = UIImage(bitmap: renderer.bitmap)
     }
+}
+
+private func loadMap() -> Tilemap {
+    let jsonURL = Bundle.main.url(forResource: "Map", withExtension: "json")!
+    let jsonData = try! Data(contentsOf: jsonURL)
+    return try! JSONDecoder().decode(Tilemap.self, from: jsonData)
 }
