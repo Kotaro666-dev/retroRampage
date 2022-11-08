@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             let translation = panGesture.translation(in: view)
             var vector = Vector(x: Double(translation.x), y: Double(translation.y))
             vector /= max(joystickRadius, vector.length)
+            panGesture.setTranslation(CGPoint(x: vector.x * joystickRadius, y: vector.y * joystickRadius), in: view)
             return vector
         default:
             return Vector(x: 0, y: 0)
