@@ -21,6 +21,7 @@ public extension Tile {
 
 public struct Tilemap: Decodable {
     private let tiles: [Tile]
+    public let things: [Thing]
     public let width: Int
 }
 
